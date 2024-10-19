@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+   <SoundDef>
+    <defName>XChargeSound</defName>  
+	<context>MapOnly</context>
+	<eventNames />
+    <maxSimultaneous>20</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>XChargeSound</clipPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+     <SoundDef>
+    <defName>XLanceSound</defName>  
+	<context>MapOnly</context>
+	<eventNames />
+    <maxSimultaneous>6</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>XLanceSound</clipPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+     <SoundDef>
+    <defName>XCannonSound</defName>  
+	<context>MapOnly</context>
+	<eventNames />
+    <maxSimultaneous>40</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>XCannonSound</clipPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>XSnipeSound</defName>  
+	<context>MapOnly</context>
+	<eventNames />
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>XSnipeSound</clipPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+   <SoundDef>
+    <defName>XSMGSound</defName>  
+	<context>MapOnly</context>
+	<eventNames />
+    <maxSimultaneous>40</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>XSMGSound</clipPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>   
+
+</Defs>
