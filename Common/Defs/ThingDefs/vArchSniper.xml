@@ -40,7 +40,7 @@
     </weaponClasses>
     <statBases>
       <WorkToMake>120000</WorkToMake>
-      <Mass>2.50</Mass>
+      <Mass>3.50</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.90</AccuracyMedium>
@@ -52,13 +52,13 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AW_Bullet_ArchotechSniper</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>50</range>
+        <warmupTime>1.9</warmupTime>
+        <range>55</range>
         <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>XLanceSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>15</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -91,10 +91,10 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
+      <damageAmountBase>60</damageAmountBase>
       <stoppingPower>2</stoppingPower>
-      <armorPenetrationBase>0.65</armorPenetrationBase>
-      <speed>115</speed>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+      <speed>150</speed>
     </projectile>
   </ThingDef>
 

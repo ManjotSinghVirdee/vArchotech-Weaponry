@@ -42,9 +42,9 @@
       <WorkToMake>40000</WorkToMake>
       <Mass>0.5</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.40</AccuracyLong>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -54,7 +54,7 @@
         <defaultProjectile>AW_Bullet_ArchotechPistol</defaultProjectile>
         <warmupTime>0.25</warmupTime>
         <range>25</range>
-        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>25</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>
         <soundCast>XChargeSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
