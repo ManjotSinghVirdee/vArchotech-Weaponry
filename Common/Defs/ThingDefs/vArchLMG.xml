@@ -68,7 +68,7 @@
           <li>Blunt</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2.5</cooldownTime>
+        <cooldownTime>2.0</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -77,7 +77,7 @@
           <li>Poke</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2.5</cooldownTime>
+        <cooldownTime>2.0</cooldownTime>
       </li>
     </tools>
 </ThingDef>
@@ -91,7 +91,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>14</damageAmountBase>
+      <damageAmountBase>13</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.35</armorPenetrationBase>
       <speed>90</speed>
