@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>XPike</defName>
+		<label>XPike</label>
+		<description>A long, double edged melee weapon powered by an advanced power source.</description>
+		<graphicData>
+			<texPath>Weapon/XPike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1.8</Mass>
+		</statBases>
+		<equippedAngleOffset>-40</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>S1_Ultratech_LevelTwo</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>13</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetration>0.6</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+							<amount>35</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>	
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+							<amount>18</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+
+	</ThingDef>
+	
+</Defs>

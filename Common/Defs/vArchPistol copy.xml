@@ -3,17 +3,17 @@
 <Defs>
 	<!-- ==== Archotech Pistol ==== -->
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>MSV_ArchotechPistol</defName>
+    <defName>V_ArchotechPistol</defName>
     <label>Archotech Pistol</label>
     <description>A small, yet advanced and powerful pistol crafted by a mysterious archotech. These pistols are very rarely seen wielded by mysterious or very powerful personalities, since they can deal heavy damage despite being so small.</description>
-  <techLevel>Archotech</techLevel>
+  <techLevel>Spacer</techLevel>
 	<graphicData>
-      <texPath>Weapons/AW_ArchotechPistol</texPath>
+      <texPath>Weapon/AW_ArchotechPistol</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>MSV_Archotech_LevelOne</researchPrerequisite>
+      <researchPrerequisite>V1_Archotech_LevelOne</researchPrerequisite>
       <skillRequirements>
         <Crafting>14</Crafting>
       </skillRequirements>
@@ -25,7 +25,7 @@
       <Steel>10</Steel>
 	  <Plasteel>10</Plasteel>
 	  <ComponentIndustrial>1</ComponentIndustrial>
-      <ComponentSpacer>1w</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardLowFreq</li>
@@ -52,7 +52,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AW_Bullet_ArchotechPistol</defaultProjectile>
-        <warmupTime>0.15</warmupTime>
+        <warmupTime>0.25</warmupTime>
         <range>25</range>
         <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>

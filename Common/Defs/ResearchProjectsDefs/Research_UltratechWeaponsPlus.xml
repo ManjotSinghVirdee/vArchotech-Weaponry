@@ -3,15 +3,45 @@
 <Defs>
   
   <ResearchTabDef>
-    <defName>V1_ArchotechWeaponsPlus</defName>
-    <label>Archotech Weapons</label>
+    <defName>S1_UltratechWeaponsPlus</defName>
+    <label>Ultratech Weapons</label>
   </ResearchTabDef>
   
   <ResearchProjectDef>
-    <tab>V1_ArchotechWeaponsPlus</tab>
+    <tab>S1_UltratechWeaponsPlus</tab>
+    <defName>S1_Ultratech_LevelOne</defName>
+    <label>Ultratech Weapons Level One</label>
+    <description>Piece by piece the colony close in on understanding the powerful energy source needed to craft Ultratech weapons.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+	  <li>ChargedShot</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>    
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <tab>S1_UltratechWeaponsPlus</tab>
+    <defName>S1_Ultratech_LevelTwo</defName>
+    <label>Ultratech Weapons Level Two</label>
+    <description>Unleash the full power of the Ultratech weapons.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+	  <li>S1_Ultratech_LevelOne</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>    
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <tab>S1_UltratechWeaponsPlus</tab>
     <defName>V1_Archotech_LevelOne</defName>
     <label>Archotech Weapons Level One</label>
-    <description>Piece by piece the colony close in on understanding the powerful energy source needed to craft Archotech Weapons.</description>
+    <description>Piece by piece the colony close in on understanding the powerful energy source needed to craft Archotech weapons.</description>
     <baseCost>25000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -20,21 +50,6 @@
     </prerequisites>
     <researchViewX>2</researchViewX>
     <researchViewY>1</researchViewY>    
-  </ResearchProjectDef>
-  
-    <ResearchProjectDef>
-    <tab>V1_ArchotechWeaponsPlus</tab>
-    <defName>V1_Archotech_LevelTwo</defName>
-    <label>Archotech Weapons Level Two</label>
-    <description>Unleash the full power of the Archotech Weapons.</description>
-    <baseCost>50000</baseCost>
-    <techLevel>Spacer</techLevel>
-    <prerequisites>
-      <li>AdvancedFabrication</li>
-	  <li>V1_Archotech_LevelOne</li>
-    </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>2</researchViewY>    
   </ResearchProjectDef>
   
 </Defs>

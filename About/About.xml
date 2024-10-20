@@ -4,7 +4,8 @@
 	<author>ManjotSinghVirdee</author>
     <packageId>ManjotSinghVirdee.vArchotechWeaponry</packageId>
     <supportedVersions>
-	<li>1.5</li>
+	<li>1.3</li>
+	<li>1.2</li>
     </supportedVersions>
 	<description>I have combined the assets from "Archotech Weaponry" and the functionality of "Ultratech Weapons Plus" to create a simple mod to enable my own weapons and preferences.</description>
 </ModMetaData> 
