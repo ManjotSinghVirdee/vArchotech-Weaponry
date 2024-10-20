@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<!-- ==== Archotech Pistol ==== -->
+	<!-- ==== Archotech LMG ==== -->
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>V_ArchotechPistol</defName>
-    <label>Archotech Pistol</label>
-    <description>A small, yet advanced and powerful pistol crafted by a mysterious archotech. These pistols are very rarely seen wielded by mysterious or very powerful personalities, since they can deal heavy damage despite being so small.</description>
-  <techLevel>Spacer</techLevel>
+    <defName>V_ArchotechLMG</defName>
+    <label>Archotech LMG</label>
+		<description>A heavy automatic weapon crafted by a mysterious archotech. This magnificent piece of advanced weapon engineering is capable of shooting powerful slugs at long range, which are extremely lethal and can easily pierce through even the best of armors.</description>
+		<techLevel>Archotech</techLevel>
 	<graphicData>
-      <texPath>Weapon/AW_ArchotechPistol</texPath>
+      <texPath>Weapon/AW_ArchotechLMG</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>V1_Archotech_LevelOne</researchPrerequisite>
+      <researchPrerequisite>V1_Archotech_LevelTwo</researchPrerequisite>
       <skillRequirements>
         <Crafting>14</Crafting>
       </skillRequirements>
@@ -22,10 +22,10 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>10</Steel>
-	  <Plasteel>10</Plasteel>
-	  <ComponentIndustrial>1</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Steel>120</Steel>
+	  <Plasteel>120</Plasteel>
+	  <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>20</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardLowFreq</li>
@@ -39,23 +39,23 @@
 	  <li>Ultratech</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <Mass>0.5</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.40</AccuracyLong>
-      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+      <WorkToMake>160000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>AW_Bullet_ArchotechPistol</defaultProjectile>
-        <warmupTime>0.25</warmupTime>
-        <range>25</range>
-        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
+        <defaultProjectile>AW_Bullet_ArchotechLMG</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>30</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>16</burstShotCount>
         <soundCast>XChargeSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -67,8 +67,8 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>6</power>
-        <cooldownTime>2.0</cooldownTime>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -76,25 +76,25 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>6</power>
-        <cooldownTime>2.0</cooldownTime>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
     </tools>
 </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>AW_Bullet_ArchotechPistol</defName>
-    <label>archotech pistol bullet</label>
+    <defName>AW_Bullet_ArchotechLMG</defName>
+    <label>archotech LMG bullet</label>
     <graphicData>
       <texPath>Projectile/Shot_Archotech</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>14</damageAmountBase>
       <stoppingPower>1</stoppingPower>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
-      <speed>70</speed>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>90</speed>
     </projectile>
   </ThingDef>
 

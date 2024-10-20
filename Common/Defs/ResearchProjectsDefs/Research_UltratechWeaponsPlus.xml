@@ -33,8 +33,8 @@
       <li>AdvancedFabrication</li>
 	  <li>S1_Ultratech_LevelOne</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>    
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>    
   </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -48,8 +48,23 @@
       <li>AdvancedFabrication</li>
 	  <li>ChargedShot</li>
     </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>    
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <tab>S1_UltratechWeaponsPlus</tab>
+    <defName>V1_Archotech_LevelTwo</defName>
+    <label>Archotech Weapons Level Two</label>
+    <description>Unleash the full power of the Archotech weapons.</description>
+    <baseCost>25000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+	  <li>ChargedShot</li>
+    </prerequisites>
     <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>    
+    <researchViewY>2</researchViewY>    
   </ResearchProjectDef>
   
 </Defs>

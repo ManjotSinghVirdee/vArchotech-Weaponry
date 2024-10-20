@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<!-- ==== Archotech SMG ==== -->
+<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>V_ArchotechSMG</defName>
+    <label>Archotech SMG</label>
+    <description>A light, compact and powerful machine gun crafted by a mysterious archotech. This gun is a masterpiece of weapon engineering that can fire light, fast bullets which can deal heavy damage.</description>
+		<techLevel>Archotech</techLevel>
+	<graphicData>
+      <texPath>Weapon/AW_ArchotechSMG</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>V1_Archotech_LevelTwo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>90</Steel>
+	  <Plasteel>90</Plasteel>
+	  <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentSpacer>9</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>Ultratech</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>90000</WorkToMake>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AW_Bullet_ArchotechSMG</defaultProjectile>
+        <warmupTime>0.34</warmupTime>
+        <range>28</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>8</burstShotCount>
+        <soundCast>XSMGSound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>4</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+</ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>AW_Bullet_ArchotechSMG</defName>
+    <label>archotech SMG bullet</label>
+    <graphicData>
+      <texPath>Projectile/Shot_Archotech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

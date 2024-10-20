@@ -6,7 +6,7 @@
     <defName>V_ArchotechPistol</defName>
     <label>Archotech Pistol</label>
     <description>A small, yet advanced and powerful pistol crafted by a mysterious archotech. These pistols are very rarely seen wielded by mysterious or very powerful personalities, since they can deal heavy damage despite being so small.</description>
-  <techLevel>Spacer</techLevel>
+  <techLevel>Archotech</techLevel>
 	<graphicData>
       <texPath>Weapon/AW_ArchotechPistol</texPath>
     <graphicClass>Graphic_Single</graphicClass>
@@ -22,10 +22,10 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>10</Steel>
-	  <Plasteel>10</Plasteel>
-	  <ComponentIndustrial>1</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Steel>25</Steel>
+	  <Plasteel>25</Plasteel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardLowFreq</li>
@@ -39,7 +39,7 @@
 	  <li>Ultratech</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>20000</WorkToMake>
+      <WorkToMake>40000</WorkToMake>
       <Mass>0.5</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
