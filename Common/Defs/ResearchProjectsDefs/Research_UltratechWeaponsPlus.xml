@@ -61,7 +61,7 @@
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>AdvancedFabrication</li>
-	  <li>ChargedShot</li>
+	  <li>V1_Archotech_LevelOne</li>
     </prerequisites>
     <researchViewX>2</researchViewX>
     <researchViewY>2</researchViewY>    

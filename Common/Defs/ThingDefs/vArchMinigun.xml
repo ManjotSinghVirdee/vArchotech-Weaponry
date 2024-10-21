@@ -24,8 +24,8 @@
     <costList>
       <Steel>180</Steel>
 	  <Plasteel>180</Plasteel>
-	  <ComponentIndustrial>25</ComponentIndustrial>
-      <ComponentSpacer>25</ComponentSpacer>
+	  <ComponentIndustrial>40</ComponentIndustrial>
+      <ComponentSpacer>40</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardLowFreq</li>
