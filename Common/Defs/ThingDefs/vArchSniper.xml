@@ -45,17 +45,17 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.90</AccuracyMedium>
       <AccuracyLong>0.95</AccuracyLong>
-      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AW_Bullet_ArchotechSniper</defaultProjectile>
-        <warmupTime>1.9</warmupTime>
+        <warmupTime>1.7</warmupTime>
         <range>55</range>
         <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
+        <burstShotCount>2</burstShotCount>
         <soundCast>XLanceSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
