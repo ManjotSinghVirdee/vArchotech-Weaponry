@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+  
+      <SoundDef>
+        <defName>AW_SwordHeavy</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Arc_Sword_Heavy</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>48~48</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AW_SwordLight</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Arc_Sword_Light</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>48~48</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
    <SoundDef>
     <defName>XChargeSound</defName>  
