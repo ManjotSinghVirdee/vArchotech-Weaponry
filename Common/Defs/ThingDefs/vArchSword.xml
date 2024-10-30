@@ -19,7 +19,7 @@
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
-			<researchPrerequisite>V1_Ultratech_LevelOne</researchPrerequisite>
+			<researchPrerequisite>V1_Archotech_LevelOne</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
