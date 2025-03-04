@@ -1287,3 +1287,79 @@
   </RecipeDef>
 </Defs>
 
+  <!-- Archotech Ascended Mind -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>ArchotechAscendedMind</defName>
+    <label>archotech ascended mind</label>
+    <labelNoun>an archotech ascended mind</labelNoun>
+    <description>An installed archotech ascended mind.</description>
+    <descriptionHyperlinks><ThingDef>ArchotechAscendedMind</ThingDef></descriptionHyperlinks>
+    <comps>
+			<li Class="HediffCompProperties_HealPermanentWounds" />
+		</comps>
+    <stages>
+      <li>
+		<partEfficiencyOffset>3</partEfficiencyOffset>
+			<statOffsets>
+        <GlobalLearningFactor>20</GlobalLearningFactor>
+				<GeneralLaborSpeed>3</GeneralLaborSpeed>
+        <ResearchSpeed>1</ResearchSpeed>
+			</statOffsets>
+      </li>
+	  
+    </stages>
+    <spawnThingOnRemoved>ArchotechMemoryModule</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="ArchoPartAdvanced">
+    <defName>ArchotechAscendedMind</defName>
+    <label>archotech ascended mind</label>
+    <description>An impressive feat of medical engineering. From what has been gleaned by those who research archotechnologies, it seems to pump attomachines throughout the whole body from it's central core, it stimulates the brain's dopamine and seratonin receptors somehow improving their intellect and learning factors.</description>
+    <descriptionHyperlinks><RecipeDef>InstallArchotechAscendedMind</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+     <costList>
+      <Attomachinery>500</Attomachinery>
+	  <Picomachinery>500</Picomachinery>
+      <ComponentSpacer>100</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MarketValue>1500000</MarketValue>
+      <Mass>2</Mass>
+	  <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <techHediffsTags>
+      <li>Archotech</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallArchotechAscendedMind</defName>
+    <label>install archotech ascended mind</label>
+    <description>Install an archotech ascended mind.</description>
+    <descriptionHyperlinks><ThingDef>ArchotechAscendedMind</ThingDef></descriptionHyperlinks>
+    <jobString>Installing archotech ascended mind.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechAscendedMind</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechAscendedMind</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechAscendedMind</addsHediff>
+  </RecipeDef>
+</Defs>
