@@ -43,14 +43,14 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AW_Bullet_ArchotechRifle</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
+        <warmupTime>0.6</warmupTime>
         <range>35</range>
         <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>

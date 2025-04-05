@@ -43,7 +43,7 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.40</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -51,8 +51,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AW_Bullet_ArchotechSMG</defaultProjectile>
         <warmupTime>0.34</warmupTime>
-        <range>28</range>
-        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <range>24</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <burstShotCount>8</burstShotCount>
         <soundCast>XSMGSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -91,7 +91,7 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>12</damageAmountBase>
       <stoppingPower>0.5</stoppingPower>
-      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
       <speed>75</speed>
     </projectile>
   </ThingDef>

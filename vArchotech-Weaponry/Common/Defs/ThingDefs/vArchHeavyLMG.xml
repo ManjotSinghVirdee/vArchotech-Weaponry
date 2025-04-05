@@ -39,10 +39,10 @@
     <statBases>
       <WorkToMake>160000</WorkToMake>
       <Mass>3</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.50</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -89,9 +89,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>13</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
       <stoppingPower>1</stoppingPower>
-      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
       <speed>90</speed>
     </projectile>
   </ThingDef>
