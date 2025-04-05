@@ -37,8 +37,6 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
       <li>SpacerGun</li>

@@ -28,8 +28,6 @@
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
       <li>SpacerGun</li>
@@ -91,9 +89,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>9</damageAmountBase>
       <stoppingPower>0.5</stoppingPower>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>70</speed>
     </projectile>
   </ThingDef>
