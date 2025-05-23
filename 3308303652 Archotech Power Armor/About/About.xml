@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+	<ModMetaData>
+		<name>Archotech Power Armor</name>
+		<packageId>New.ArchotechPowerArmor</packageId>	<!-- \\\ Can change to anything \\\ -->
+		<author>GeckoBoyer</author> <!-- \\\ Change to your username for Steam \\\ -->
+		<supportedVersions>
+			<li>1.5</li> <!-- \\\ your can add more line when the new version for the game\\\ -->
+		</supportedVersions>
+		<description>
+A 1.5 update to Archotech Power Armor, no previous version compatibility though
+Quite a few stat and recipe changes, an armor texture switch-around, description updates, and some code TLC
+
+[h1]Features:[/h1]
+ - 2 Archotech Power Helmets
+ - 2 Archotech Power Armors
+
+[h1]Research Prerequisite[/h1]
+ - AdvancedFabrication
+
+[h1]recipeUsers[/h1]
+ - FabricationBench
+
+Commissioned by me with the service of the extremely talented Jango D'soul here on the Workshop, through the "Rimworld Mod Market" Discord.
+
+[h1]Note[/h1]
+Compatibility with the following mods has been added:
+- More Archotech Garbage (Continued)
+- SOS2
+
+[h1]Credits:[/h1]
+ - Rimworld
+ - GeckoBoyer- XML attemptor lmao
+ - JangoDsoul- Art and XML coder
+ - Conan The Civilian- XML compatibility patch
+ - Oskar Potocki and the whole VE Team - VE Framework
+
+[url=https://discord.gg/7befJWr9xS][img]https://i.imgur.com/cfoFEMA.png[/img][/url]
+		</description>
+		<modDependencies>
+			<li>
+			  <displayName>Vanilla Expanded Framework</displayName>
+			  <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			  <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+			</li>
+		</modDependencies>
+		<loadBefore>
+				<li>ModderName.ModSeries.ModName</li>
+			</loadBefore>
+		<loadAfter>
+			<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		</loadAfter>
+
+	</ModMetaData>

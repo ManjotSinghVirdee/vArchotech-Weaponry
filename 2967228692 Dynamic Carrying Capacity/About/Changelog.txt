@@ -1,0 +1,19 @@
+# Changelog for DynamicCarryingCapacity
+
+1.5.2 - Fix for the bug introduced in the last patch
+
+
+1.5.1 - Carry capacity is now a transpiler to increase compatibility, thanks to Inglix!
+
+
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
+1.4.2 - Probably fixes the issues with Vanilla Vehicles Expanded
+
+
+1.4.1 - Steams was down during the first publish
+
+
+1.4.0 - First publish
+

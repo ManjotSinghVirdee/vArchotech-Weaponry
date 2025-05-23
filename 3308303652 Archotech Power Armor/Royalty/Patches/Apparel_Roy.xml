@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="APA_Archotech_Velite_Armor"]/equippedStatOffsets</xpath>
+      <value>
+            <PsychicSensitivity>0.5</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+			<MeditationFocusGain>0.15</MeditationFocusGain>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="APA_Archotech_Velite_Helmet"]/equippedStatOffsets</xpath>
+      <value>
+            <PsychicSensitivity>0.5</PsychicSensitivity>
+        	<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain>0.25</MeditationFocusGain>
+      </value>
+   </Operation>
+
+   <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="APA_Archotech_Palatine_Armor"]/equippedStatOffsets</xpath>
+      <value>
+            <PsychicSensitivity>1.0</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+			<MeditationFocusGain>0.3</MeditationFocusGain>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="APA_Archotech_Palatine_Helmet"]/equippedStatOffsets</xpath>
+      <value>
+            <PsychicSensitivity>1.0</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain>0.5</MeditationFocusGain>
+      </value>
+   </Operation>
+</Patch>

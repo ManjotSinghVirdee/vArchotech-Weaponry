@@ -356,13 +356,12 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
-</Defs>
-<RecipeDef>
+  <RecipeDef>
     <defName>Make_Archite_Capsule</defName>
     <label>make Archite Capsule</label>
     <description>Make some Archite Capsules.</description>
     <jobString>Making Archite Capsules.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>3000</workAmount>
@@ -412,3 +411,4 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
+</Defs>

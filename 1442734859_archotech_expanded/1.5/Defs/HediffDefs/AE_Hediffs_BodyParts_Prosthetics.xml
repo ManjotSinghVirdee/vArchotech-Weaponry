@@ -352,10 +352,17 @@
     <description>An installed advanced archotech heart.</description>
     <descriptionHyperlinks><ThingDef>AdvancedArchotechHeart</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>AdvancedArchotechHeart</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>4</partEfficiency>
-    </addedPartProps>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>4</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<naturalHealingFactor>2</naturalHealingFactor>
+			</li>
+		</stages>
   </HediffDef>
 
   <ThingDef ParentName="ArchoPartNormal">
@@ -421,6 +428,7 @@
       <li>
         <statOffsets>
           <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+          <ToxicResistance>0.25</ToxicResistance>
         </statOffsets>
       </li>
 	</stages>
@@ -490,6 +498,7 @@
       <li>
         <statOffsets>
           <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+          <ToxicResistance>0.25</ToxicResistance>
         </statOffsets>
       </li>
 	</stages>
@@ -738,6 +747,14 @@
       <solid>true</solid>
       <partEfficiency>4</partEfficiency>
     </addedPartProps>
+	  <stages>
+      <li>
+        <statOffsets>
+          <ToxicResistance>0.25</ToxicResistance>
+			  <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+        </statOffsets>
+      </li>
+	  </stages>
   </HediffDef>
 
   <ThingDef ParentName="ArchoPartNormal">
@@ -1224,9 +1241,9 @@
     <stages>
       <li>
     <restFallFactor>0.9</restFallFactor>
-		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		<partEfficiencyOffset>0.5</partEfficiencyOffset>
 			<statOffsets>
-        <GlobalLearningFactor>2</GlobalLearningFactor>
+        <GlobalLearningFactor>4</GlobalLearningFactor>
 				<GeneralLaborSpeed>1</GeneralLaborSpeed>
 			</statOffsets>
       </li>
@@ -1321,7 +1338,7 @@
     </thingSetMakerTags>
      <costList>
       <Attomachinery>500</Attomachinery>
-	  <Picomachinery>500</Picomachinery>
+	    <Picomachinery>500</Picomachinery>
       <ComponentSpacer>100</ComponentSpacer>
     </costList>
     <statBases>

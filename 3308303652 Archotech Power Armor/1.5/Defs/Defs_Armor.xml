@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef Name="APA_ArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<tradeability>Sellable</tradeability>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>250000</WorkToMake>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Mass>15</Mass>
+			<ArmorRating_Sharp>1.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<Flammability>0.0</Flammability>
+			<Insulation_Cold>99</Insulation_Cold>
+			<Insulation_Heat>99</Insulation_Heat>
+			<EquipDelay>24</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.0</PsychicSensitivity>
+			<MeditationFocusGain>0.2</MeditationFocusGain>
+			<ToxicResistance>0.8</ToxicResistance>
+			<IncomingDamageFactor>-0.20</IncomingDamageFactor>
+			<PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
+		</equippedStatOffsets>
+		<modExtensions>
+	    <li Class="VFECore.ApparelExtension">
+			<equippedStatFactors>
+				<MoveSpeed>1.5</MoveSpeed>
+			</equippedStatFactors>
+		</li>
+	</modExtensions>
+		<costList>
+         <ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">2</ArchiteCapsule>
+			<Plasteel>600</Plasteel>
+			<ComponentSpacer>15</ComponentSpacer>
+			<AIPersonaCore>1</AIPersonaCore>
+		</costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Waist</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>PrestigeCombatGear</li>
+				<li>Archotech</li>
+				<li>EVA</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<thingCategories Inherit="False">
+			<li>ApparelArmor</li>
+		</thingCategories>
+	</ThingDef>
+	<!-- Velite -->
+	<ThingDef ParentName="APA_ArmorBase">
+		<defName>APA_Archotech_Velite_Armor</defName>
+		<label>Archotech Velite Armor</label>
+		<description>Archotech made into wearable armor for humans, the exact synthesis process isn't entirely understood; depending on the number of capsules loaded with archotech nanites that are introduced to the base materials, and whether a superintellence or neuropsychic catalyst is introduced, it seems to make different gear. Ultimately, however, the outcome is likely to be just the whim of their machine god. The reliable factor is that it's always an incomparably comfortable and invincible piece of equipment. This armor is compact in design and uses a tight spread of multiple archotech panels that presents as a lean and efficient form, with an inner fibrosuit. The armor injects archites into major muscle spindles after regular analyses to enhance biomechanical efficiency, which accelerates both locomotion and work motion efficiency.</description>
+		<graphicData>
+			<texPath>Things/Archotech_PowerArmor_One_UI</texPath>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Archotech_PowerArmor_One</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Palatine -->
+	<ThingDef ParentName="APA_ArmorBase">
+		<defName>APA_Archotech_Palatine_Armor</defName>
+		<label>Archotech Mech PowerArmor</label>
+		<description>Archotech made into wearable armor for humans, the exact synthesis process isn't entirely understood; depending on the number of capsules loaded with archotech nanites that are introduced to the base materials, and whether a superintellence or neuropsychic catalyst is introduced, it seems to make different gear. Ultimately, however, the outcome is likely to be just the whim of their machine god. The reliable factor is that it's always an incomparably comfortable and invincible piece of equipment. This armor is heavily encased in dense archo-material plates and shaped into a powerful and robust silhouette, all over an inner fibrosuit. There are capsules of archites stored within the armor, which analyzes metabolic performance and then releases these archites into the bloodstream to enhance cellular synthesis and force generation in the muscle mass.</description>
+		<tickerType>Normal</tickerType>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>Things/Archotech_PowerArmor_Two_UI</texPath>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>305000</WorkToMake>
+			<MaxHitPoints>2400</MaxHitPoints>
+			<Mass>15</Mass>
+			<ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.85</ArmorRating_Blunt>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<Insulation_Cold>99</Insulation_Cold>
+			<Insulation_Heat>99</Insulation_Heat>
+			<EquipDelay>24</EquipDelay>
+		</statBases>
+		<costList Inherit="False">
+         <ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">4</ArchiteCapsule>
+			<Plasteel>600</Plasteel>
+			<ComponentSpacer>15</ComponentSpacer>
+			<AIPersonaCore>1</AIPersonaCore>
+		</costList>
+		<equippedStatOffsets Inherit="False">
+			<PsychicSensitivity>0.4</PsychicSensitivity>
+			<MeditationFocusGain>0.4</MeditationFocusGain>
+			<ToxicResistance>0.8</ToxicResistance>
+			<IncomingDamageFactor>-0.40</IncomingDamageFactor>
+			<PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">16</VacuumSpeedMultiplier>
+		</equippedStatOffsets>
+		<modExtensions>
+	    <li Class="VFECore.ApparelExtension">
+			<equippedStatFactors>
+				<InjuryHealingFactor>2.0</InjuryHealingFactor>
+				<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				<MoveSpeed>1.5</MoveSpeed>
+			</equippedStatFactors>
+		</li>
+	</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Archotech_PowerArmor_Two</wornGraphicPath>
+			<tags Inherit="False">
+				<li>PrestigeCombatGear</li>
+				<li>Archotech</li>
+				<li>EVA</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier7</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
+		</comps>
+		<verbs>
+		</verbs>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

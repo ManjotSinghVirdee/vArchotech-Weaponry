@@ -21,7 +21,7 @@
 		<recipeMaker>
 			<researchPrerequisite>V1_Archotech_LevelOne</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>16</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
 			<li>FabricationBench</li>
@@ -49,8 +49,8 @@
 					<li>Stab</li>
 				</capacities>
 				<power>20</power>
-				<cooldownTime>0.9</cooldownTime>
-				<armorPenetration>0.9</armorPenetration>
+				<cooldownTime>0.7</cooldownTime>
+				<armorPenetration>0.7</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
@@ -64,8 +64,8 @@
 					<li>Cut</li>
 				</capacities>
 				<power>32</power>
-				<cooldownTime>0.9</cooldownTime>
-				<armorPenetration>0.95</armorPenetration>
+				<cooldownTime>0.7</cooldownTime>
+				<armorPenetration>0.7</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>

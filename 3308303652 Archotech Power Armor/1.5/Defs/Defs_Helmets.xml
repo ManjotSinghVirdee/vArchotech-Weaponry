@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   <ThingDef Name="APA_HelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+      <techLevel>Archotech</techLevel>
+      <tradeability>Sellable</tradeability>
+      <smeltable>false</smeltable>
+      <graphicData>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <WorkToMake>70000</WorkToMake>
+         <MaxHitPoints>1000</MaxHitPoints>
+         <Mass>5</Mass>
+         <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
+         <ArmorRating_Blunt>1.40</ArmorRating_Blunt>
+         <ArmorRating_Heat>2</ArmorRating_Heat>
+         <Flammability>0.0</Flammability>
+         <Insulation_Cold>99</Insulation_Cold>
+         <Insulation_Heat>99</Insulation_Heat>
+         <EquipDelay>8</EquipDelay>
+      </statBases>
+      <equippedStatOffsets>
+         <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+         <ToxicResistance>0.2</ToxicResistance>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+         <PsychicSensitivity>0.0</PsychicSensitivity>
+			<MeditationFocusGain>0.2</MeditationFocusGain>
+         <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+         <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+      </equippedStatOffsets>
+      <costList>
+         <ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">2</ArchiteCapsule>
+         <Plasteel>400</Plasteel>
+         <ComponentSpacer>10</ComponentSpacer>
+         <PsychicAmplifier MayRequire="Ludeon.RimWorld.Royalty">1</PsychicAmplifier>
+      </costList>
+      <recipeMaker>
+         <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+         <skillRequirements>
+            <Crafting>16</Crafting>
+         </skillRequirements>
+         <recipeUsers Inherit="False">
+            <li>FabricationBench</li>
+         </recipeUsers>
+      </recipeMaker>
+      <thingSetMakerTags>
+         <li>RewardStandardMidFreq</li>
+         <li>RewardStandardQualitySuper</li>
+      </thingSetMakerTags>
+      <apparel>
+         <parentTagDef>ApparelHead</parentTagDef>
+         <immuneToToxGasExposure>true</immuneToToxGasExposure>
+         <bodyPartGroups>
+            <li>FullHead</li>
+         </bodyPartGroups>
+         <layers>
+            <li>Overhead</li>
+         </layers>
+         <tags>
+            <li>PrestigeCombatGear</li>
+            <li>Archotech</li>
+            <li>EVA</li>
+            <li>Royal</li>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier7</li>
+         </tags>
+         <defaultOutfitTags>
+            <li>Soldier</li>
+         </defaultOutfitTags>
+         <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      </apparel>
+      <thingCategories Inherit="False">
+         <li>Headgear</li>
+      </thingCategories>
+   </ThingDef>
+   <!-- Velite -->
+   <ThingDef ParentName="APA_HelmetBase">
+      <defName>APA_Archotech_Velite_Helmet</defName>
+      <label>Ancient Mech Helmet</label>
+      <description>Archotech made into wearable armor for humans, the exact synthesis process isn't entirely understood; depending on the number of capsules loaded with archotech nanites that are introduced to the base materials, and whether a superintellence or neuropsychic catalyst is introduced, it seems to make different gear. Ultimately, however, the outcome is likely to be just the whim of their machine god. The reliable factor is that it's always an incomparably comfortable and invincible piece of equipment. The helmet comes with a tinted visor that provides structural analyses on all physical projects, and recommends action patterns to speed up completion.</description>
+      <graphicData>
+         <texPath>Things/Archotech_Helmet_One_UI</texPath>
+         <drawSize>1.25</drawSize>
+      </graphicData>
+      <apparel>
+         <wornGraphicPath>Things/Archotech_Helmet_One</wornGraphicPath>
+      </apparel>
+      <comps>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
+		</comps>
+   </ThingDef>
+   <!-- Palatine -->
+   <ThingDef ParentName="APA_HelmetBase">
+      <defName>APA_Archotech_Palatine_Helmet</defName>
+      <label>Archotech Mech Helmet</label>
+      <description>Archotech made into wearable armor for humans, the exact synthesis process isn't entirely understood; depending on the number of capsules loaded with archotech nanites that are introduced to the base materials, and whether a superintellence or neuropsychic catalyst is introduced, it seems to make different gear. Ultimately, however, the outcome is likely to be just the whim of their machine god. The reliable factor is that it's always an incomparably comfortable and invincible piece of equipment. The helmet is completely encased in archotech plates that protect capsules of archites, that are immediately released when physiological trauma is detected.</description>
+      <techLevel>Archotech</techLevel>
+      <graphicData>
+         <texPath>Things/Archotech_Helmet_Two_UI</texPath>
+         <drawSize>1.25</drawSize>
+      </graphicData>
+      <statBases>
+         <WorkToMake>285000</WorkToMake>
+         <MaxHitPoints>2000</MaxHitPoints>
+         <Mass>5</Mass>
+         <ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+         <ArmorRating_Blunt>1.85</ArmorRating_Blunt>
+         <ArmorRating_Heat>2</ArmorRating_Heat>
+         <Flammability>0</Flammability>
+         <Insulation_Cold>99</Insulation_Cold>
+         <Insulation_Heat>99</Insulation_Heat>
+         <EquipDelay>8</EquipDelay>
+      </statBases>
+      <costList Inherit="False">
+         <ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">4</ArchiteCapsule>
+         <Plasteel>400</Plasteel>
+         <ComponentSpacer>10</ComponentSpacer>
+         <PsychicAmplifier MayRequire="Ludeon.RimWorld.Royalty">1</PsychicAmplifier>
+      </costList>
+      <equippedStatOffsets Inherit="False">
+         <MentalBreakThreshold>-0.4</MentalBreakThreshold>
+         <ToxicResistance>0.2</ToxicResistance>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+         <PsychicSensitivity>0.4</PsychicSensitivity>
+			<MeditationFocusGain>0.4</MeditationFocusGain>
+         <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+         <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      </equippedStatOffsets>
+	  		<modExtensions>
+	    <li Class="VFECore.ApparelExtension">
+			<equippedStatFactors>
+				<InjuryHealingFactor>2.0</InjuryHealingFactor>
+			</equippedStatFactors>
+		</li>
+	</modExtensions>
+      <recipeMaker>
+         <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+         <skillRequirements>
+            <Crafting>20</Crafting>
+         </skillRequirements>
+         <recipeUsers>
+            <li>FabricationBench</li>
+         </recipeUsers>
+      </recipeMaker>
+      <apparel>
+         <wornGraphicPath>Things/Archotech_Helmet_Two</wornGraphicPath>
+         <tags Inherit="False">
+            <li>PrestigeCombatGear</li>
+            <li>Archotech</li>
+            <li>EVA</li>
+            <li>Royal</li>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier7</li>
+         </tags>
+      </apparel>
+      <thingSetMakerTags Inherit="False">
+         <li>RewardStandardLowFreq</li>
+         <li>RewardStandardQualitySuper</li>
+      </thingSetMakerTags>
+      <comps>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
+		</comps>
+   </ThingDef>
+</Defs>

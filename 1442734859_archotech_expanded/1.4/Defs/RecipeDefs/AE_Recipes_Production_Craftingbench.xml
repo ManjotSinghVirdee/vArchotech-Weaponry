@@ -356,4 +356,59 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
+  <RecipeDef>
+    <defName>Make_Archite_Capsule</defName>
+    <label>make Archite Capsule</label>
+    <description>Make some Archite Capsules.</description>
+    <jobString>Making Archite Capsules.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>3000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<recipeUsers>
+	<li>BasicArchotechWorkbench</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Attomachinery</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Attomachinery</li>
+        <li>Gold</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ArchiteCapsule>2</ArchiteCapsule>
+    </products>
+    <researchPrerequisite>ArchotechMimicry</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>18</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
 </Defs>

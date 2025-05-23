@@ -21,7 +21,7 @@
 		<recipeMaker>
 			<researchPrerequisite>V1_Archotech_LevelTwo</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>18</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
 			<li>FabricationBench</li>
@@ -31,7 +31,7 @@
 			<Steel>200</Steel>
 			<Plasteel>300</Plasteel>
 			<ComponentIndustrial>20</ComponentIndustrial>
-			<ComponentSpacer>16</ComponentSpacer>
+			<ComponentSpacer>14</ComponentSpacer>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -50,7 +50,7 @@
 				</capacities>
 				<power>40</power>
 				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>1.1</armorPenetration>
+				<armorPenetration>1.2</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
@@ -65,11 +65,11 @@
 				</capacities>
 				<power>64</power>
 				<cooldownTime>1.8</cooldownTime>
-				<armorPenetration>1.1</armorPenetration>
+				<armorPenetration>1.2</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
-							<amount>20</amount>
+							<amount>40</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>

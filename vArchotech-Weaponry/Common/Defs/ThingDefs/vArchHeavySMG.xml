@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<!-- ==== Archotech Heavy LMG ==== -->
+	<!-- ==== Archotech Heavy SMG ==== -->
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>V_ArchotechHeavyLMG</defName>
-    <label>Archotech Heavy LMG</label>
+    <defName>V_ArchotechHeavySMG</defName>
+    <label>Archotech Heavy SMG</label>
 		<description>A heavy automatic weapon crafted by a mysterious archotech. This magnificent piece of advanced weapon engineering is capable of shooting powerful slugs at long range, which are extremely lethal and can easily pierce through even the best of armors.</description>
 		<techLevel>Archotech</techLevel>
 	<graphicData>
-      <texPath>Weapon/AW_ArchotechHeavyLMG</texPath>
+      <texPath>Weapon/AW_ArchotechHeavySMG</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <soundInteract>Interact_Rifle</soundInteract>
@@ -25,7 +25,7 @@
       <Steel>120</Steel>
 	  <Plasteel>120</Plasteel>
 	  <ComponentIndustrial>30</ComponentIndustrial>
-      <ComponentSpacer>30</ComponentSpacer>
+      <ComponentSpacer>15</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
     </thingSetMakerTags>
@@ -39,24 +39,24 @@
     <statBases>
       <WorkToMake>160000</WorkToMake>
       <Mass>3</Mass>
-      <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.50</AccuracyMedium>
-      <AccuracyLong>0.40</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>AW_Bullet_ArchotechHeavyLMG</defaultProjectile>
-        <warmupTime>1.6</warmupTime>
-        <range>30</range>
+        <defaultProjectile>AW_Bullet_ArchotechHeavySMG</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>34</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-        <burstShotCount>16</burstShotCount>
+        <burstShotCount>8</burstShotCount>
         <soundCast>XChargeSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>18</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -65,7 +65,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>18</power>
         <cooldownTime>2.0</cooldownTime>
       </li>
       <li>
@@ -74,25 +74,25 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>18</power>
         <cooldownTime>2.0</cooldownTime>
       </li>
     </tools>
 </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>AW_Bullet_ArchotechHeavyLMG</defName>
-    <label>archotech Heavy LMG bullet</label>
+    <defName>AW_Bullet_ArchotechHeavySMG</defName>
+    <label>archotech Heavy SMG bullet</label>
     <graphicData>
       <texPath>Projectile/Shot_Archotech</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>16</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>1</stoppingPower>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
-      <speed>90</speed>
+      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <speed>120</speed>
     </projectile>
   </ThingDef>
 

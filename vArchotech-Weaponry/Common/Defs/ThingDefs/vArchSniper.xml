@@ -25,7 +25,7 @@
       <Steel>110</Steel>
 	  <Plasteel>110</Plasteel>
 	  <ComponentIndustrial>25</ComponentIndustrial>
-      <ComponentSpacer>25</ComponentSpacer>
+      <ComponentSpacer>15</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
     </thingSetMakerTags>

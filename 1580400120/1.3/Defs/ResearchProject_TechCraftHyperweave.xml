@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>TechHyperweaveCrafting</defName>
+		<label>hyperweave</label>
+		<description>Combines knowledge of machining and tailoring to craft hyperweave.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>Machining</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

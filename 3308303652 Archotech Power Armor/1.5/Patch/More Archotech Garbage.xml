@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>More Archotech Garbage (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+
+                <!-- Helmets -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/defName[@Name=APA_Archotech_Velite_Helmet]/costList</xpath>
+                    <value>
+                        <costList>
+						<ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">2</ArchiteCapsule>
+                            <ArchotechScrap>100</ArchotechScrap>
+                            <ComponentSpacer>15</ComponentSpacer>
+							<PsychicAmplifier MayRequire="Ludeon.RimWorld.Royalty">1</PsychicAmplifier>
+                        </costList>
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/defName[@Name=APA_Archotech_Palatine_Helmet]/costList</xpath>
+                    <value>
+                        <costList>
+						<ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">4</ArchiteCapsule>
+                            <ArchotechScrap>100</ArchotechScrap>
+                            <ComponentSpacer>15</ComponentSpacer>
+							<PsychicAmplifier MayRequire="Ludeon.RimWorld.Royalty">1</PsychicAmplifier>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="APA_HelmetBase"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <recipeUsers>
+                            <li>ArchBench</li>
+                        </recipeUsers>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="APA_HelmetBase"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>ArchoTechTierThree</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Armors -->
+               <li Class="PatchOperationReplace">
+                    <xpath>/Defs/defName[@Name=APA_Archotech_Velite_Armor]/costList</xpath>
+                    <value>
+                        <costList>
+						<ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">2</ArchiteCapsule>
+                            <ArchotechScrap>400</ArchotechScrap>
+                            <ComponentSpacer>15</ComponentSpacer>
+							<AIPersonaCore>1</AIPersonaCore>
+                        </costList>
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/defName[@Name=APA_Archotech_Palatine_Armor]/costList</xpath>
+                    <value>
+                        <costList>
+						<ArchiteCapsule MayRequire="Ludeon.RimWorld.Biotech">4</ArchiteCapsule>
+                            <ArchotechScrap>400</ArchotechScrap>
+                            <ComponentSpacer>15</ComponentSpacer>
+							<AIPersonaCore>1</AIPersonaCore>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="APA_ArmorBase"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <recipeUsers>
+                            <li>ArchBench</li>
+                        </recipeUsers>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="APA_ArmorBase"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>ArchoTechTierThree</researchPrerequisite>
+                    </value>
+                </li>
+                
+            </operations>
+        </match>
+    </Operation>
+</Patch>
