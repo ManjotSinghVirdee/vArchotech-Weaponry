@@ -302,7 +302,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>50</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -311,7 +311,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentIndustrial>100</ComponentIndustrial>
+      <ComponentIndustrial>50</ComponentIndustrial>
     </products>
     <researchPrerequisite>ArchotechMimicry</researchPrerequisite>
     <skillRequirements>
@@ -378,7 +378,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -386,7 +386,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>500</count>
+        <count>200</count>
       </li>
       <li>
         <filter>
@@ -394,7 +394,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>500</count>
+        <count>200</count>
       </li>
       <li>
         <filter>
@@ -414,7 +414,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentSpacer>100</ComponentSpacer>
+      <ComponentSpacer>50</ComponentSpacer>
     </products>
     <researchPrerequisite>ArchotechMimicry</researchPrerequisite>
     <skillRequirements>
