@@ -402,7 +402,7 @@
             <li>Gold</li>
           </thingDefs>
         </filter>
-        <count>200</count>
+        <count>20</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
