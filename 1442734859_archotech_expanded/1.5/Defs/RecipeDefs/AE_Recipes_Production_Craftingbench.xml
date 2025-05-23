@@ -287,7 +287,7 @@
     <label>make bulk components</label>
     <description>Make some bulk components.</description>
     <jobString>Making bulk components.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>10000</workAmount>
@@ -299,14 +299,6 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Attomachinery</li>
-          </thingDefs>
-        </filter>
-        <count>10</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
             <li>Steel</li>
           </thingDefs>
         </filter>
@@ -315,13 +307,11 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Attomachinery</li>
-        <li>ComponentIndustrial</li>
+        <li>Steel</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
       <ComponentIndustrial>100</ComponentIndustrial>
-      <Attomachinery>10</Attomachinery>
     </products>
     <researchPrerequisite>ArchotechMimicry</researchPrerequisite>
     <skillRequirements>
@@ -373,7 +363,7 @@
     <label>make bulk advanced components</label>
     <description>Make some bulk advanced components.</description>
     <jobString>Making bulk advanced components.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>100000</workAmount>
@@ -382,14 +372,6 @@
 	<li>BasicArchotechWorkbench</li>
 	</recipeUsers>
     <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Attomachinery</li>
-          </thingDefs>
-        </filter>
-        <count>10</count>
-      </li>
       <li>
         <filter>
           <thingDefs>
@@ -404,7 +386,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>200</count>
+        <count>500</count>
       </li>
       <li>
         <filter>
@@ -425,7 +407,6 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Attomachinery</li>
         <li>ComponentIndustrial</li>
         <li>Steel</li>
         <li>Plasteel</li>
@@ -434,7 +415,6 @@
     </fixedIngredientFilter>
     <products>
       <ComponentSpacer>100</ComponentSpacer>
-      <Attomachinery>10</Attomachinery>
     </products>
     <researchPrerequisite>ArchotechMimicry</researchPrerequisite>
     <skillRequirements>
